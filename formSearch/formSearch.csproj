@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85ED5444-A563-4F1B-A00E-BA8BFFBD6A29}</ProjectGuid>
+    <ProjectGuid>{1D661473-3735-4838-8656-7FA515DC0A86}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Management_App</RootNamespace>
-    <AssemblyName>Management-App</AssemblyName>
+    <RootNamespace>formSearch</RootNamespace>
+    <AssemblyName>formSearch</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,26 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\class\Class1.cs" />
-    <Compile Include="src\dbConfig\dbOperation.cs" />
-    <Compile Include="src\dbConfig\dbConfig.cs" />
-    <Compile Include="src\forms\formSearch.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formSearch.Designer.cs">
-      <DependentUpon>formSearch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="src\forms\formLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\forms\formLogin.Designer.cs">
-      <DependentUpon>formLogin.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="src\forms\formLogin.resx">
-      <DependentUpon>formLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,9 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="src\forms\formSearch.resx">
-      <DependentUpon>formSearch.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +76,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

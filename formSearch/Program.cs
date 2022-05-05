@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Management_App
+namespace formSearch
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Management_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formLogin());
+            Application.Run(new Form1());
         }
     }
 }
